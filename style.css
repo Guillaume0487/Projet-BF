@@ -1,0 +1,248 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./img/Background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#accueil {
+    position: absolute;
+    top: 36%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.538);
+}
+
+#accueil h1 {
+    margin: 10px;
+}
+
+#accueil h2 {
+    font-size: large;
+    background-color: red;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+}
+
+#accueil h2:hover {
+    box-shadow: 0 0 10px red;
+    cursor: pointer;
+}
+
+#global {
+    position: absolute;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+#message {
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 150px;
+}
+
+@keyframes slidein {
+    0% {
+        transform: translate(100%, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+h3 {
+    color: white;
+    white-space: nowrap;
+    font-size: x-large;
+    text-shadow: 0 0 5px rgba(0, 0, 0);
+    animation: slidein 15s linear infinite;
+}
+
+#global h1 {
+    color: white;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+#menu {
+    font-family: sans-serif;
+    font-size: small;
+    font-weight: lighter;
+    display: flex;
+    margin: 5px;
+    color: white;
+}
+
+#menu h2 {
+    padding: 2px;
+    width: 150px;
+    background-color: #245953;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.538);
+}
+
+#menu h2:first-child {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 5px;
+}
+
+#menu h2:last-child {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 5px;
+}
+
+#menu h2:not(:last-child) {
+    border-right: solid 2px white;
+}
+
+#menu h2:hover {
+    background-color: #408E91;
+    box-shadow: 0 0 10px #408E91;
+    cursor: pointer;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.538);
+}
+
+#game-zone {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 175px;
+    margin-right: 175px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    width: 270px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.winer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #245953;
+    box-shadow: 0 0 10px #245953;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    width: 270px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.minus {
+    font-size: large;
+    width: 258px;
+    background-color: red;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.minus:hover {
+    cursor: pointer;
+    background-color: rgb(255, 73, 73);
+    box-shadow: 0 0 5px rgb(255, 73, 73);
+}
+
+#minimum-tow,
+#minimum-four {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    text-shadow: 0 0 10px rgb(0, 0, 0.5);
+    width: 100%;
+}
+
+#add-and-play {
+    margin: 5px;
+}
+
+.add-and-play-btn {
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin: 5px;
+    border: 0;
+    border-radius: 5px;
+    font-size: large;
+    box-shadow: 0 0 10px rgb(0, 0, 0.5);
+}
+
+#addplayer-btn {
+    background-color: green;
+    color: white;
+}
+
+#addplayer-btn:hover {
+    cursor: pointer;
+    background-color: #009900;
+    box-shadow: 0 0 10px #009900;
+}
+
+#play-btn {
+    background-color: red;
+    color: white;
+}
+
+#play-btn:hover {
+    cursor: pointer;
+    background-color: rgb(255, 73, 73);
+    box-shadow: 0 0 5px rgb(255, 73, 73);
+}
+
+#refresh-btn {
+    background-color: red;
+    color: white;
+}
+
+#refresh-btn:hover {
+    cursor: pointer;
+    background-color: rgb(255, 73, 73);
+    box-shadow: 0 0 5px rgb(255, 73, 73);
+}
